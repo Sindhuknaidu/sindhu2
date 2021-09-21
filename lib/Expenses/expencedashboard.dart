@@ -21,6 +21,18 @@ class _expanseState extends State<expanse>  {
   List<History> recents = List();
   Expense _expense;
   Data _data ;
+  String status;
+  int count;
+  getStatus(){
+    if(status == 0){
+      return count;
+    }
+    else{
+     count++;
+    }
+  }
+
+
 
 
   void initState(){
@@ -109,7 +121,7 @@ setState(() {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight:120,
-        title: new Text('Expanse'),
+        title: new Text('Expanse',style: TextStyle(color: Colors.black),),
         centerTitle: true,
         leading:IconButton(icon: Icon(Icons.arrow_back, color: Colors.black, size: 30),
             onPressed: () {
@@ -118,7 +130,7 @@ setState(() {
             }),
         actions: [
           IconButton(
-            icon: Icon(Icons.more_vert_outlined),
+            icon: Icon(Icons.more_vert_outlined), color: Colors.black,
             onPressed: () {
               showBottomMore(context);
             },
@@ -171,7 +183,7 @@ setState(() {
                       leading: Padding(
                         padding: EdgeInsets.only(left:18.0),
                         child: Text(
-                          '',
+                          '${status}',
                           style:
                           TextStyle(fontSize: 25.0, color: Colors.teal),
                         ),
@@ -201,12 +213,13 @@ setState(() {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    const ListTile(
+                     ListTile(
                       leading: Padding(
                         padding: EdgeInsets.only(left:20.0),
                         child: Text(
-                          '',
-                          style: TextStyle(fontSize: 25.0),
+                          '${status}',
+                          style:
+                          TextStyle(fontSize: 25.0, color: Colors.teal),
                         ),
                       ),
                       title: Text(
@@ -238,9 +251,9 @@ setState(() {
                       leading: Padding(
                         padding: EdgeInsets.only(left:20.0),
                         child: Text(
-                          '',
+                          '${status}',
                           style:
-                          TextStyle(fontSize: 25.0, color: Colors.green),
+                          TextStyle(fontSize: 25.0, color: Colors.teal),
                         ),
                       ),
                       title: Text(

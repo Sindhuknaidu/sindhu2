@@ -40,7 +40,7 @@ class _expensePageState extends State<expensePage> {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 100,
-        backgroundColor: Colors.lightBlue[200],
+        backgroundColor:Color(0xff0277bd),
         leading: IconButton(
           icon: Icon(
             Icons.arrow_back,

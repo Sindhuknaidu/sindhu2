@@ -448,23 +448,18 @@ class _LeaveState extends State<Leave> {
                                                         value: true,
                                                         textOn: "AM",
                                                         textOff: "PM",
-                                                        colorOn: Colors.green[400],
-                                                        colorOff:   Color(0xff0277bd),
+                                                        colorOn: Color(0xff0277bd),
+                                                        colorOff:  Colors.green[400],
                                                         iconOn: Icons.wb_sunny_outlined,
                                                         iconOff: Icons.wb_sunny_sharp,
                                                         textSize: 20.0,
                                                         onChanged: (bool position) {
                                                           if(position == true){
-                                                            print(From="${DayPeriod.am}");
                                                             From="${Am}";
-
                                                           }
                                                           else if (position == false){
-                                                            print(From="${DayPeriod.pm}");
                                                             From="${Pm}";
-
                                                           }
-
                                                         },
                                                       ),
                                                     ),
@@ -568,7 +563,7 @@ class _LeaveState extends State<Leave> {
                                                       textOn: "AM",
                                                       textOff: "PM",
                                                       colorOn:Color(0xff0277bd),
-                                                      colorOff: Color(0xff0277bd),
+                                                      colorOff:Colors.green[400],
                                                       iconOn: Icons.wb_sunny_outlined,
                                                       iconOff: Icons.wb_sunny_sharp,
                                                       textSize: 20.0,

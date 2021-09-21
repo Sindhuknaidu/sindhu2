@@ -61,7 +61,7 @@ class _DashboardPageState extends State<DashboardPage> {
 
         child: Scaffold(
         appBar: AppBar(
-          leading: IconButton(icon: Icon(Icons.arrow_back),
+          leading: IconButton(icon: Icon(Icons.arrow_back),color: Colors.black,
             onPressed: (){
               moveToLastScreen();
             },),

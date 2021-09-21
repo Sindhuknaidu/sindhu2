@@ -90,7 +90,7 @@ class _allstatusState extends State<allstatus> {
       child: Scaffold(
 
         appBar: AppBar(
-          backgroundColor: Colors.lightBlue[100],
+          backgroundColor:Color(0xff0277bd),
           leading: IconButton(
             icon: Icon(
               Icons.arrow_back,
@@ -131,17 +131,17 @@ class _allstatusState extends State<allstatus> {
           ],
           bottom: TabBar(
             labelColor: Colors.black,
-            indicatorColor: Colors.blue,
+            indicatorColor: Colors.black,
             tabs: [
               Tab(
                   child: Text(
                     "Pending Status",
-                    style: TextStyle(color: Colors.blue),
+                    style: TextStyle(color: Colors.black),
                   )),
               Tab(
                 child: Text(
                   "All Status",
-                  style: TextStyle(color: Colors.blue),
+                  style: TextStyle(color: Colors.black),
                 ),
               ),
             ],

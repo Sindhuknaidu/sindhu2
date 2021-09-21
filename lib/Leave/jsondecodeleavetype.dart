@@ -1,7 +1,3 @@
-// To parse this JSON data, do
-//
-//     final leavetype = leavetypeFromJson(jsonString);
-
 import 'dart:convert';
 
 Leavetype leavetypeFromJson(String str) => Leavetype.fromJson(json.decode(str));

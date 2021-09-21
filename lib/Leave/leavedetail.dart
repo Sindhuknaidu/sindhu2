@@ -98,7 +98,7 @@ class _leavedetailState extends State<leavedetail> {
     return Scaffold(
 
       appBar: AppBar(
-        backgroundColor: Colors.lightBlue[300],
+        backgroundColor:Color(0xff0277bd),
         toolbarHeight: 100,
         leadingWidth: 0.5,
         automaticallyImplyLeading: false,
@@ -169,8 +169,8 @@ class _leavedetailState extends State<leavedetail> {
 
                         Divider(color: Colors.black,thickness: 0.5,height: 0.5,),
                         ListTile(
-                          title: Text('${data.leaveType}',style: TextStyle(fontSize: 18,color:Colors.black,fontWeight: FontWeight.bold),),
-                          subtitle: Text('Customer Name',style: TextStyle(fontSize:16,color:Colors.black54),),
+                          title: Text('${data.status}',style: TextStyle(fontSize: 18,color:Colors.black,fontWeight: FontWeight.bold),),
+                          subtitle: Text('Status of the leave',style: TextStyle(fontSize:16,color:Colors.black54),),
                         ),
                         Divider(color: Colors.black,thickness: 0.5,height: 0.5,),
                         SizedBox(height: 10,),
