@@ -23,6 +23,7 @@ class _allstatusState extends State<allstatus> {
   Allstatus _allstatus;
   String status;
 
+  // ignore: missing_return
   Color getColor(){
     if(status=='Approved'){
       return Colors.green;
@@ -30,9 +31,7 @@ class _allstatusState extends State<allstatus> {
     if(status=='Reject'){
       return Colors.red;
     }
-    else{
-      Colors.orange;
-    }
+
   }
   @override
   void initState(){
@@ -149,8 +148,8 @@ class _allstatusState extends State<allstatus> {
         ),
         body: TabBarView(
           children: [
-            Expanded(
-              child: Container(
+
+              Container(
                 child: ListView.builder(
                     itemCount: allstatuslist.length,
                     itemBuilder: (context, index) {
@@ -209,7 +208,7 @@ class _allstatusState extends State<allstatus> {
                       );
                     }),
               ),
-            ),
+
             Container(
               child: Column(
                   children: [
